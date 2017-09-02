@@ -4,7 +4,7 @@ picture = "logo256.paa";
 hidePicture = "false";
 hideName = "false";
 actionName = "Website";
-action = "https://hellenic-milsim.community";
+action = "https://github.com/HellenicMilsim/JTG-Formations";
 version = "1.2";
 
 logo = "logo_128_ca.paa";

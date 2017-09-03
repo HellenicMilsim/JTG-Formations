@@ -2,7 +2,7 @@
 * text=auto
 
 # Treat .cpp files as BIS .sqf
-@JTG\_Formations/Addons/*.cpp linguist-language=SQF
+@JTG\_Formations/Addons/* linguist-language=SQF
 
 # Custom for Visual Studio
 *.cs     diff=csharp

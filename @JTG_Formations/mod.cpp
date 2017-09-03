@@ -5,7 +5,7 @@ hidePicture = "false";
 hideName = "false";
 actionName = "Website";
 action = "https://github.com/HellenicMilsim/JTG-Formations";
-version = "1.2";
+version = "0.3.0";
 
 logo = "logo_128_ca.paa";
 logoOver = "logo_256_ca.paa";

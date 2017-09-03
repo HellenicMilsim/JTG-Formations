@@ -46,7 +46,7 @@ Rifleman (AT) _Private_:
 
 ### Turkish Army
 
-The HK 416 was chosen as the main Turkish weapons, despite its being issued to the country's Special Forces.
+The HK 416 was chosen as the main Turkish rifle, despite its being issued to the country's Special Forces.
 That's because there is no HK33E in our community's modset (RHS, NIArsenal), and we want each faction to share
 as little equipment as possible. This precludes the M4, M16 and G3 rifles.
 

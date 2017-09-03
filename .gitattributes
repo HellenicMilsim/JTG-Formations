@@ -1,6 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# Treat .cpp files as BIS .sqf
+@JTG\_Formations/Addons/*.cpp linguist-language=SQF
+
 # Custom for Visual Studio
 *.cs     diff=csharp
 

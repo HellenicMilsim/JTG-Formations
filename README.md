@@ -25,7 +25,7 @@ All units are equipped with the following items unless otherwise specified:
 
 * [Maglite XL50][ace-flashlight]
 * [DAGR][ace-dagr] (Team Leader only)
-* Entrenching Tool (Rifleman only)
+* [Entrenching Tool][ace-trench] (Rifleman only)
 * 1x [IR Strobe][ace-strobe]
 * 1x [Cable Tie][ace-captive]
 * Binoculars (MG/AT Asst, Team Leader)
@@ -106,3 +106,4 @@ Rifleman (AT) _Private_:
 [ace-strobe]: https://ace3mod.com/wiki/class-names.html#dagr
 [ace-captive]: https://ace3mod.com/wiki/class-names.html#captive
 [ace-medical]: https://ace3mod.com/wiki/class-names.html#medical
+[ace-trench]: https://ace3mod.com/wiki/class-names.html#trenches

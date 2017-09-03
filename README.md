@@ -1,28 +1,55 @@
 # JTG Formations
 
-JTG Formations provides group definitions for the JTGFactions mod.
+JTG Formations provides group definitions for the JTGFactions mod. This mod strives to follow the [Semantic Versioning][semver] convention.
 
-## Factions
+# Conventions
 
-### Greek Army (Woodland)
+## Standard Equipment
 
-Standard equipment:
+All units are equipped with the following items unless otherwise specified:
+
+### Medical
 
 * 4x Basic Bandage
 * 2x Morphine Autoinjector
 * 1x Epinephrine Autoinjector
-* Maglite
-* 1x IR Strobe
+
+### Throwables
+
 * 2x White Smoke
 * 2x Red Smoke
 * 2x Green Smoke
 * 2x RGN Grenade
 
+### Misc
 
-Team Leader _Sargeant_:
+* Maglite
+* Entrenching Tool (Rifleman only)
+* 1x IR Strobe
+* 1x Cable Tie
+
+## Team Compositions
+
+Fireteams follow this pattern: 
+
+* **Team Leader** _Sargeant_: equipped with GL and LR radio
+* **Rifleman (SAW)** _Corporal_: Carries the Squad Automatic Weapon. Note that there isn't a SAW Assistant role
+* **Rifleman (GL)** _Corporal_: Equipped with GL and large backpack, doubles as ammo mule
+* **Rifleman (AT)** _Private_: Equipped with single-use AT tube
+* **Rifleman** _Private_: Carries an entrenching tool (see below)
+
+
+# Factions
+
+## Greek Army (Woodland)
+
+The Greek army uses the HK G3A2 rifle. Officers and Special Weapons teams are also equippet with the M1911 pistol.
+
+### Infantry
+
+Team Leader:
 
 * Primary: G3A3 (RIS) GL, 10x tracer mags, 5x HE GL, 4x Smoke (White) GL
-* Special: Entrenching Tool
 
 Rifleman (SAW) _Corporal_:
 
@@ -30,34 +57,25 @@ Rifleman (SAW) _Corporal_:
 
 Rifleman (GL) _Corporal_:
 
-* Primary: FN Minimi, 3x 200-round tracer pouch
+* Primary: G3A3 (RIS) GL, 10x tracer mags, 10x HE GL, 4x Smoke (White) GL
 
 Rifleman _Private_:
 
 * Primary: G3A2 (Widegrip), 10x tracer mags
-* Special: Entrenching Tool
 
 Rifleman (AT) _Private_:
 
 * Primary: G3A2 (Widegrip), 10x tracer mags
 * Secondary: None
 * Launcher: RPG-26
-* Special: Entrenching Tool
 
-### Turkish Army
+## Turkish Army
 
 The HK 416 was chosen as the main Turkish rifle, despite its being issued to the country's Special Forces.
 That's because there is no HK33E in our community's modset (RHS, NIArsenal), and we want factions to share
 as little equipment as possible. This precludes the M4, M16 and G3 rifles.
 
-Standard equipment:
-
-* 2x Personal Aid Kit
-* 2x White Smoke
-* 2x Red Smoke
-* 2x Green Smoke
-* 2x RGN Grenade
-
+### Infantry
 
 Team Leader _Sargeant_:
 
@@ -79,3 +97,5 @@ Rifleman (AT) _Private_:
 
 * Primary: HK 416 D10, 10x tracer mags
 * Launcher: RPG-26
+
+[semver]: http://semver.org/

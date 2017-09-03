@@ -2,6 +2,14 @@
 
 JTG Formations provides group definitions for the JTGFactions mod. This mod strives to follow the [Semantic Versioning][semver] convention.
 
+# Dependencies:
+
+* `@JTG_Factions`
+* `@NIArsenal`
+* `@RHS_AFRF`
+* `@RHS_USAF`
+* `@ACE3`
+
 # Conventions
 
 ## Standard Equipment
@@ -45,7 +53,7 @@ Fireteams follow this pattern:
 
 ## Greek Army (Woodland)
 
-The Greek army uses the HK G3A2 rifle. Officers and Special Weapons teams are also equippet with the M1911 pistol.
+The Greek army uses the HK G3A2 rifle. Officers and Special Weapons teams are equipped with the M1911 pistol.
 
 ### Infantry
 

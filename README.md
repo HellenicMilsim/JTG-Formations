@@ -1,6 +1,6 @@
 # JTG Formations
 
-The JTG Formations provides group definitions for the JTGFactions mod.
+JTG Formations provides group definitions for the JTGFactions mod.
 
 ## Factions
 
@@ -44,3 +44,38 @@ Rifleman (AT) _Private_:
 * Launcher: RPG-26
 * Special: Entrenching Tool
 
+### Turkish Army
+
+The HK 416 was chosen as the main Turkish weapons, despite its being issued to the country's Special Forces.
+That's because there is no HK33E in our community's modset (RHS, NIArsenal), and we want each faction to share
+as little equipment as possible. This precludes the M4, M16 and G3 rifles.
+
+Standard equipment:
+
+* 2x Personal Aid Kit
+* 2x White Smoke
+* 2x Red Smoke
+* 2x Green Smoke
+* 2x RGN Grenade
+
+
+Team Leader _Sargeant_:
+
+* Primary:  HK 416 D145 (M320 GL), 10x tracer mags, 5x HE GL, 4x Smoke (White) GL
+
+Rifleman (SAW) _Corporal_:
+
+* Primary: M249, 5x 200-round tracer pouch
+
+Rifleman (GL) _Corporal_:
+
+* Primary:  HK 416 D145 (M320 GL), 20x tracer mags, 20x HE GL
+
+Rifleman _Private_:
+
+* Primary: HK 416 D10, 10x tracer mags
+
+Rifleman (AT) _Private_:
+
+* Primary: HK 416 D10, 10x tracer mags
+* Launcher: RPG-26

@@ -10,7 +10,9 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
-            "rhs_c_troops"
+            "rhs_c_troops",
+            "A3_Modules_F",
+            "A3_Modules_F_Curator"
         };
         author = "+= rath";
         authors[] = { "+= rath" };

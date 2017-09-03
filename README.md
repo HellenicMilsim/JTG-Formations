@@ -8,7 +8,7 @@ JTG Formations provides group definitions for the JTGFactions mod. This mod stri
 
 All units are equipped with the following items unless otherwise specified:
 
-### Medical
+### [Medical][ace-medical]
 
 * 4x Basic Bandage
 * 2x Morphine Autoinjector
@@ -23,10 +23,12 @@ All units are equipped with the following items unless otherwise specified:
 
 ### Misc
 
-* Maglite
+* [Maglite XL50][ace-flashlight]
+* [DAGR][ace-dagr] (Team Leader only)
 * Entrenching Tool (Rifleman only)
-* 1x IR Strobe
-* 1x Cable Tie
+* 1x [IR Strobe][ace-strobe]
+* 1x [Cable Tie][ace-captive]
+* Binoculars (MG/AT Asst, Team Leader)
 
 ## Team Compositions
 
@@ -99,3 +101,8 @@ Rifleman (AT) _Private_:
 * Launcher: RPG-26
 
 [semver]: http://semver.org/
+[ace-flashlight]: https://ace3mod.com/wiki/class-names.html#flashlights
+[ace-dagr]: https://ace3mod.com/wiki/class-names.html#dagr
+[ace-strobe]: https://ace3mod.com/wiki/class-names.html#dagr
+[ace-captive]: https://ace3mod.com/wiki/class-names.html#captive
+[ace-medical]: https://ace3mod.com/wiki/class-names.html#medical

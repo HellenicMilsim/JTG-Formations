@@ -11,6 +11,7 @@ class CfgPatches {
             "B_JTGGR_Team_Leader",
             "B_JTGGR_Rifleman_GL",
             "B_JTGGR_Pilot",
+            "B_JTGGR_Officer",
             "B_JTGGR_Crewman"
         };
         weapons[] = {};

@@ -7,7 +7,10 @@ class CfgPatches {
             "B_JTGTRK_MG_Assistant",
             "B_JTGTRK_Team_Leader",
             "B_JTGTRK_Rifleman_GL",
-            "B_JTGTRK_Machinegunner"
+            "B_JTGTRK_Machinegunner",
+            "B_JTGTRK_Officer",
+            "B_JTGTRK_2IC",
+            "B_JTGTRK_FAC"
         };
         weapons[] = {};
         requiredVersion = 1.62;

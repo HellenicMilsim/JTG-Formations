@@ -92,6 +92,33 @@ class CfgGroups {
                     };
                 };
 
+                class jtgtrk_infantry_hq {
+                    name = "HQ";
+                    side = 1;
+                    faction = "JTG_TRK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = { 0 , 0 , 0 };
+                        rank = "CAPTAIN";
+                        side = 1;
+                        vehicle = "B_JTGTRK_Officer";
+                    };
+                    class Unit1 {
+                        position[] = { 5 , -5 , 0 };
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_JTGTRK_2IC";
+                    };
+                    class Unit2 {
+                        position[] = { -5 , -5 , 0 };
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_JTGTRK_FAC";
+                    };
+                };
+
             };
 
             class SpecOps {
@@ -325,6 +352,81 @@ class CfgVehicles {
 
             class ALiVE_orbatCreator {
                 init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_lmg_mg42kws_b','','','',['hlc_50Rnd_792x57_B_MG42',50],[],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',3,15]]],['jtg_v_6b5_trk',[['ACE_IR_Strobe_Item',1],['MiniGrenade',2,1],['SmokeShellRed',2,1],['SmokeShellGreen',2,1],['SmokeShell',2,1]]],['B_AssaultPack_rgr',[['ACE_EntrenchingTool',1],['hlc_100Rnd_792x57_AP_MG42',3,100]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_Officer : B_JTGTRK_Team_Leader {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Officer";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2RIS_GL','','','',['hlc_30rnd_556x45_b_HK33',30],['rhs_mag_M441_HE',1],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_IR_Strobe_Item',1],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',2,15],['hlc_30rnd_556x45_t_HK33',2,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['hlc_30rnd_556x45_t_HK33',3,30],['SmokeShell',2,1]]],['tf_rt1523g_black',[['rhs_mag_m714_White',4,1],['rhs_mag_m715_Green',2,1],['rhs_mag_m713_Red',2,1],['1Rnd_HE_Grenade_shell',4,1],['hlc_30rnd_556x45_t_HK33',4,30]]],'jtg_h_booniehat_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_2IC : B_JTGTRK_Officer {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "2IC";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2RIS_GL','','','',['hlc_30rnd_556x45_b_HK33',30],['rhs_mag_M441_HE',1],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_IR_Strobe_Item',1],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',2,15],['hlc_30rnd_556x45_t_HK33',2,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['hlc_30rnd_556x45_t_HK33',3,30],['SmokeShell',2,1]]],['tf_rt1523g_black',[['rhs_mag_m714_White',4,1],['rhs_mag_m715_Green',2,1],['rhs_mag_m713_Red',2,1],['1Rnd_HE_Grenade_shell',4,1],['hlc_30rnd_556x45_t_HK33',4,30]]],'jtg_h_booniehat_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_FAC : B_JTGTRK_Officer {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "FAC";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2RIS_GL','','','',['hlc_30rnd_556x45_b_HK33',30],['rhs_mag_M441_HE',1],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_IR_Strobe_Item',1],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',2,15],['hlc_30rnd_556x45_t_HK33',2,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['hlc_30rnd_556x45_t_HK33',3,30],['SmokeShell',2,1]]],['tf_rt1523g_black',[['tfw_dd',1],['rhs_mag_m714_White',2,1],['rhs_mag_m715_Green',2,1],['rhs_mag_m713_Red',2,1],['1Rnd_HE_Grenade_shell',4,1],['hlc_30rnd_556x45_t_HK33',4,30]]],'jtg_h_booniehat_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };

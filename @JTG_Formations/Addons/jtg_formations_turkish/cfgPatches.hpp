@@ -1,7 +1,6 @@
 class CfgPatches {
     class JTG_TRK {
         units[] = {
-            "jtg_trk_infantry_rifleman",
             "B_JTGTRK_Rifleman_SAW",
             "B_JTGTRK_Rifleman_AT",
             "B_JTGTRK_MG_Assistant",

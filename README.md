@@ -53,60 +53,25 @@ Fireteams follow this pattern:
 
 ## Greek Army (Woodland)
 
-The Greek army uses the HK G3A2 rifle. Officers and Special Weapons teams are equipped with the M1911 pistol.
+The Greek army uses the HK G3A2 (Widegrip) rifle. Officers and Special Weapons teams are equipped with the M1911 pistol.
 
 ### Infantry
 
-Team Leader:
-
-* Primary: G3A3 (RIS) GL, 10x tracer mags, 5x HE GL, 4x Smoke (White) GL
-
-Rifleman (SAW) _Corporal_:
-
-* Primary: FN Minimi, 3x 200-round tracer pouch
-
-Rifleman (GL) _Corporal_:
-
-* Primary: G3A3 (RIS) GL, 10x tracer mags, 10x HE GL, 4x Smoke (White) GL
-
-Rifleman _Private_:
-
-* Primary: G3A2 (Widegrip), 10x tracer mags
-
-Rifleman (AT) _Private_:
-
-* Primary: G3A2 (Widegrip), 10x tracer mags
-* Secondary: None
-* Launcher: RPG-26
+Primary: HK G3A2 (Widegrip)
+Secondary: Colt M1911
+Launcher (Single use): RPG-26
+Machinegun: MG-3
 
 ## Turkish Army
 
-The HK 416 was chosen as the main Turkish rifle, despite its being issued to the country's Special Forces.
-That's because there is no HK33E in our community's modset (RHS, NIArsenal), and we want factions to share
-as little equipment as possible. This precludes the M4, M16 and G3 rifles.
+Primary service rifle is HK33 (NIArsenal). Machinegunners use Rheinmetall MG-42-KWS.
 
 ### Infantry
 
-Team Leader _Sargeant_:
-
-* Primary:  HK 416 D145 (M320 GL), 10x tracer mags, 5x HE GL, 4x Smoke (White) GL
-
-Rifleman (SAW) _Corporal_:
-
-* Primary: M249, 5x 200-round tracer pouch
-
-Rifleman (GL) _Corporal_:
-
-* Primary:  HK 416 D145 (M320 GL), 20x tracer mags, 20x HE GL
-
-Rifleman _Private_:
-
-* Primary: HK 416 D10, 10x tracer mags
-
-Rifleman (AT) _Private_:
-
-* Primary: HK 416 D10, 10x tracer mags
-* Launcher: RPG-26
+Primary Weapon: HK33
+Secondary: M9 Beretta
+Launcher (Single use): RPG-26
+Machinegun: MG42 KWS
 
 [semver]: http://semver.org/
 [ace-flashlight]: https://ace3mod.com/wiki/class-names.html#flashlights

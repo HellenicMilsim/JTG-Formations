@@ -57,21 +57,22 @@ The Greek army uses the HK G3A2 (Widegrip) rifle. Officers and Special Weapons t
 
 ### Infantry
 
-Primary: HK G3A2 (Widegrip)
-Secondary: Colt M1911
-Launcher (Single use): RPG-26
-Machinegun: MG-3
+- Primary: HK G3A2 (Widegrip)
+- Secondary: Colt M1911
+- Launcher (Single use): RPG-26
+- Machinegun: MG-3
 
 ## Turkish Army
 
-Primary service rifle is HK33 (NIArsenal). Machinegunners use Rheinmetall MG-42-KWS.
+Primary service rifle is HK33 (NIArsenal). Officers and Special Weapons teams also have the M9 Beretta. Machinegunners use Rheinmetall MG-42-KWS.
+An OPFOR clone of this faction is also included.
 
 ### Infantry
 
-Primary Weapon: HK33
-Secondary: M9 Beretta
-Launcher (Single use): RPG-26
-Machinegun: MG42 KWS
+- Primary Weapon: HK33
+- Secondary: M9 Beretta
+- Launcher (Single use): RPG-26
+- Machinegun: MG42 KWS
 
 [semver]: http://semver.org/
 [ace-flashlight]: https://ace3mod.com/wiki/class-names.html#flashlights

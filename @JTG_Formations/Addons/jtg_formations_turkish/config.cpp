@@ -150,14 +150,16 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
-    class jtg_trk_infantry_rifleman;
-    class jtg_trk_infantry_rifleman_OCimport_01 : jtg_trk_infantry_rifleman { scope = 0; class EventHandlers; };
-    class jtg_trk_infantry_rifleman_OCimport_02 : jtg_trk_infantry_rifleman_OCimport_01 { class EventHandlers; };
+    class rhs_vdv_rifleman;
+    class rhs_vdv_rifleman_OCimport_01 : rhs_vdv_rifleman { scope = 0; class EventHandlers; };
+    class rhs_vdv_rifleman_OCimport_02 : rhs_vdv_rifleman_OCimport_01 { class EventHandlers; };
 
-    class ;
+    class B_JTGTRK_Rifleman;
+    class B_JTGTRK_Rifleman_OCimport_01 : B_JTGTRK_Rifleman { scope = 0; class EventHandlers; };
+    class B_JTGTRK_Rifleman_OCimport_02 : B_JTGTRK_Rifleman_OCimport_01 { class EventHandlers; };
 
 
-    class B_JTGTRK_Rifleman : jtg_trk_infantry_rifleman_OCimport_02 {
+    class jtg_trk_infantry_rifleman : rhs_vdv_rifleman_OCimport_02 {
         author = "+= rath";
         scope = 2;
         scopeCurator = 2;
@@ -172,7 +174,7 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['rhs_weap_hk416d10_LMT_d','','','',['rhs_mag_30Rnd_556x45_Mk318_Stanag',30],[],''],[],[],['jtg_u_trk_fatigue_01',[['FirstAidKit',2]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1]]],['B_AssaultPack_rgr',[['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red',10,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2','','','',['hlc_30rnd_556x45_b_HK33',30],[],''],[],[],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_epinephrine',1]]],['jtg_v_6b5_trk',[['ACE_IR_Strobe_Item',1],['MiniGrenade',2,1],['SmokeShellRed',2,1],['SmokeShellGreen',2,1],['SmokeShell',2,1]]],['B_AssaultPack_rgr',[['ACE_EntrenchingTool',1],['hlc_30rnd_556x45_t_HK33',10,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -182,130 +184,7 @@ class CfgVehicles {
 
     };
 
-    class B_JTGTRK_Rifleman_AT : B_JTGTRK_Rifleman {
-        author = "+= rath";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Rifleman (AT)";
-        side = 1;
-        faction = "JTG_TRK";
-
-        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['rhs_weap_hk416d10_LMT_d','','','',['rhs_mag_30Rnd_556x45_Mk318_Stanag',30],[],''],['rhs_weap_rpg26','','','',['rhs_rpg26_mag',1],[],''],[],['jtg_u_trk_fatigue_01',[['FirstAidKit',2]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1],['rhs_rpg26_mag',1,1]]],['B_AssaultPack_rgr',[['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red',10,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    // class B_JTGTRK_Machinegunner : B_JTGTRK_Rifleman {
-    //     author = "+= rath";
-    //     scope = 2;
-    //     scopeCurator = 2;
-    //     displayName = "Machinegunner";
-    //     side = 1;
-    //     faction = "JTG_TRK";
-
-    //     identityTypes[] = { "Head_TK" , "LanguageENG_F" };
-
-    //     class EventHandlers : EventHandlers {
-    //         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-    //         class ALiVE_orbatCreator {
-    //         };
-
-    //     };
-
-    //     // custom attributes (do not delete)
-    //     ALiVE_orbatCreator_owned = 1;
-
-    // };
-
-    class B_JTGTRK_MG_Assistant : B_JTGTRK_Rifleman {
-        author = "+= rath";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "MG Assistant";
-        side = 1;
-        faction = "JTG_TRK";
-
-        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['rhs_weap_hk416d10_LMT_d','','','',['rhs_mag_30Rnd_556x45_Mk318_Stanag',30],[],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['FirstAidKit',2],['rhsusf_mag_15Rnd_9x19_JHP',3,15]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1]]],['B_Kitbag_rgr',[['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red',8,30]]],'jtg_h_6b27m_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    class B_JTGTRK_Team_Leader : B_JTGTRK_Rifleman {
-        author = "+= rath";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Team Leader";
-        side = 1;
-        faction = "JTG_TRK";
-
-        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['rhs_weap_hk416d145_m320','','','',['rhs_mag_30Rnd_556x45_Mk318_Stanag',30],[],''],[],[],['jtg_u_trk_fatigue_01',[['FirstAidKit',2],['rhs_mag_30Rnd_556x45_Mk318_Stanag',1,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1],['rhs_mag_M441_HE',4,1]]],['tf_rt1523g_black',[['rhs_mag_m714_White',4,1],['rhs_mag_m715_Green',2,1],['rhs_mag_m713_Red',2,1],['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red',6,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    class B_JTGTRK_Rifleman_GL : B_JTGTRK_Rifleman {
-        author = "+= rath";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Rifleman (GL)";
-        side = 1;
-        faction = "JTG_TRK";
-
-        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['rhs_weap_hk416d145_m320','','','',['rhs_mag_30Rnd_556x45_Mk318_Stanag',30],[],''],[],[],['jtg_u_trk_fatigue_01',[['FirstAidKit',2],['rhs_mag_30Rnd_556x45_Mk318_Stanag',1,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1],['rhs_mag_30Rnd_556x45_Mk318_Stanag',2,30]]],['B_Carryall_cbr',[['1Rnd_HE_Grenade_shell',20,1],['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red',20,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    class B_JTGTRK_Rifleman_SAW : B_JTGTRK_Rifleman {
+    class B_JTGTRK_Rifleman_SAW : B_JTGTRK_Rifleman_OCimport_02 {
         author = "+= rath";
         scope = 2;
         scopeCurator = 2;
@@ -321,6 +200,131 @@ class CfgVehicles {
 
             class ALiVE_orbatCreator {
                 init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_lmg_M249E2','','','',['hlc_200rnd_556x45_M_SAW',200],[],''],[],[],['jtg_u_trk_fatigue_01',[['FirstAidKit',2]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1]]],['B_Kitbag_rgr',[['200Rnd_556x45_Box_Tracer_F',5,200]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_Rifleman_AT : jtg_trk_infantry_rifleman {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (AT)";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_Euro" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2','','','',['hlc_30rnd_556x45_b_HK33',30],[],''],['rhs_weap_rpg26','','','',['rhs_rpg26_mag',1],[],''],[],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_epinephrine',1]]],['jtg_v_6b5_trk',[['ACE_IR_Strobe_Item',1],['MiniGrenade',2,1],['SmokeShellRed',2,1],['SmokeShellGreen',2,1],['SmokeShell',2,1],['rhs_rpg26_mag',1,1]]],['B_AssaultPack_rgr',[['ACE_EntrenchingTool',1],['hlc_30rnd_556x45_t_HK33',10,30]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_MG_Assistant : B_JTGTRK_Rifleman_OCimport_02 {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MG Assistant";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2','','','',['hlc_30rnd_556x45_b_HK33',30],[],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['rhsusf_mag_15Rnd_9x19_JHP',3,15]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1],['hlc_30rnd_556x45_b_HK33',2,30]]],['B_Kitbag_rgr',[['hlc_30rnd_556x45_t_HK33',10,30],['hlc_100Rnd_792x57_AP_MG42',3,100]]],'jtg_h_6b27m_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_Team_Leader : B_JTGTRK_Rifleman_OCimport_02 {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Team Leader";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2RIS_GL','','','',['hlc_30rnd_556x45_b_HK33',30],['rhs_mag_M441_HE',1],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_IR_Strobe_Item',1],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',2,15],['hlc_30rnd_556x45_t_HK33',2,30]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['hlc_30rnd_556x45_t_HK33',3,30],['SmokeShell',2,1]]],['tf_rt1523g_black',[['rhs_mag_m714_White',4,1],['rhs_mag_m715_Green',2,1],['rhs_mag_m713_Red',2,1],['1Rnd_HE_Grenade_shell',4,1],['hlc_30rnd_556x45_t_HK33',4,30]]],'jtg_h_6b27m_trk','',['Binocular','','','',[],[],''],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_Rifleman_GL : B_JTGTRK_Rifleman_OCimport_02 {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (GL)";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_rifle_hk33a2RIS_GL','','','',['hlc_30rnd_556x45_b_HK33',30],['1Rnd_HE_Grenade_shell',1],''],[],[],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_epinephrine',1],['ACE_IR_Strobe_Item',1]]],['jtg_v_6b5_trk',[['MiniGrenade',2,1],['SmokeShellGreen',2,1],['SmokeShellRed',2,1],['rhs_mag_an_m8hc',2,1]]],['B_Carryall_cbr',[['1Rnd_HE_Grenade_shell',18,1],['hlc_30rnd_556x45_t_HK33',20,30],['1Rnd_SmokeRed_Grenade_shell',2,1],['1Rnd_SmokeGreen_Grenade_shell',2,1],['1Rnd_Smoke_Grenade_shell',3,1],['UGL_FlareRed_F',2,1]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_JTGTRK_Machinegunner : jtg_trk_infantry_rifleman {
+        author = "+= rath";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Machinegunner";
+        side = 1;
+        faction = "JTG_TRK";
+
+        identityTypes[] = { "Head_TK" , "LanguageENG_F" };
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_unit = _this select 0;_onSpawn = {_unit = _this select 0;_unit setUnitLoadout [['hlc_lmg_mg42kws_b','','','',['hlc_50Rnd_792x57_B_MG42',50],[],''],[],['rhsusf_weap_m9','','','',['rhsusf_mag_15Rnd_9x19_JHP',15],[],''],['jtg_u_trk_fatigue_01',[['ACE_fieldDressing',4],['ACE_morphine',2],['ACE_epinephrine',1],['rhsusf_mag_15Rnd_9x19_JHP',3,15]]],['jtg_v_6b5_trk',[['ACE_IR_Strobe_Item',1],['MiniGrenade',2,1],['SmokeShellRed',2,1],['SmokeShellGreen',2,1],['SmokeShell',2,1]]],['B_AssaultPack_rgr',[['ACE_EntrenchingTool',1],['hlc_100Rnd_792x57_AP_MG42',3,100]]],'jtg_h_6b27m_trk','',[],['ItemMap','','ItemRadio','ItemCompass','ItemWatch','']];reload _unit;};[_unit] call _onSpawn;_unit addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
